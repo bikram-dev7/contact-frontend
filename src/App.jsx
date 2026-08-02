@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route, Link, useLocation  } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -14,11 +14,8 @@ function App() {
     <LoaderProvider>
       <div className='container'>
         <div className='d-flex justify-content-between'>
-        <h1>Contact Info</h1>
-        
+          <h1>Contact Info</h1>
         </div>
-         
-      
         <BrowserRouter>
           <Routes>
             <Route exact path='/' element={<Create />} ></Route>
